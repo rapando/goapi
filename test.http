@@ -1,0 +1,32 @@
+# fetch all books
+GET http://localhost:4000/v1/books
+###
+
+# create a book
+POST http://localhost:4000/v1/books
+Content-Type: application/json
+
+{
+    "title": "Harry Porter and the Philosopher's Stone",
+    "description": "The first book",
+    "author": "JK Rowling"
+}
+###
+
+# Fetch one book
+GET http://localhost:4000/v1/books/1
+###
+
+# update a book
+PUT http://localhost:4000/v1/books/1
+Content-Type: application/json
+
+{
+    "title": "Book 1",
+    "description": "Description 1",
+    "author": "Author 1"
+} 
+###
+
+# delete a book
+DELETE http://localhost:4000/v1/books/1
